@@ -14,7 +14,8 @@
 12. [Model Deployment Plan](#model-deployment-plan)
 13. [Final Reflections](#final-reflections)
 14. [Author](#author)
-15. [References](#references)
+15. [Colab Link](#colab-link)
+16. [References](#references)
 ----------------------------------------------
 
 # Repository Name
@@ -147,27 +148,20 @@ pip install -r requirements.txt
 
 # Conclusion and Key Findings
 
-- Best Classical Model: Extra Trees
+| Model        | Accuracy (%) | F1-Score (%) | Notes                      |
+| ------------ | ------------ | ------------ | -------------------------- |
+| CatBoost     | **90.3**     | **90.2**     | Best overall performer     |
+| DNN (Reg.)   | 85.5         | 85.2         | Suitable for real-time use |
+| RandomForest | 84.3         | 84.0         | Strong classical baseline  |
+| LogisticReg  | 66.2         | 64.9         | Weakest performer          |
 
-    - Accuracy: 79.67%
+- High performance achieved using CatBoost
 
-    - F1 Score: 79.65%
+- Deep Learning model offers lower latency for real-time applications
 
-    - Interpretable, fast, and low tuning overhead.
+- No major overfitting observed
 
-- Best Neural Network: Batch-Normalized DNN
-
-    - Accuracy: 78.67%
-
-    - F1 Score: 74.97%
-
-    - Strong performance due to batch normalization and dropout.
-
-- Overall Winner: Extra Trees
-
-    - Outperforms DNN across all metrics.
-
-    - Better suited for tabular audio features.
+- Models are robust across speakers and emotion intensity
 ----------------------------------------------
 
 # Key Takeaways
@@ -249,6 +243,12 @@ pip install -r requirements.txt
 | Author            | Contact Details       |
 |-------------------|-----------------------|
 | Shruthi AK        | sak@sandiego.edu |
+
+----------------------------------------------
+
+# Colab Link
+
+https://colab.research.google.com/drive/1S4_GhJBXFj0G1okKU8PK1Y-nmbp-qg8C?usp=sharing
 
 ----------------------------------------------
 
