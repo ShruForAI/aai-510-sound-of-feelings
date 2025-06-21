@@ -128,8 +128,8 @@ The goal is not just to classify emotions but to understand the emotional cues b
 
 - Clone the Repo
   
-git clone https://github.com/kraviteja95usd/unspoken-signals-voice-based-ai-emotion-detection.git
-cd unspoken-signals-voice-based-ai-emotion-detection
+git clone https://github.com/ShruForAI/aai-510-sound-of-feelings.git
+cd aai-510-sound-of-feelings
 pip install -r requirements.txt
 
 
